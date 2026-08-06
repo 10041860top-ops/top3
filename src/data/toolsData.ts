@@ -75,6 +75,16 @@ export const TOOLS_DATA: ToolItem[] = [
     tag: '快速',
     iconName: 'Music2',
   },
+  {
+    id: 'video-auto-subtitle',
+    title: '影片自動字幕',
+    description: 'AI 語音辨識自動生成 SRT 字幕，支援線上編輯與內嵌字幕影片導出',
+    category: 'video',
+    categoryName: '影片工具',
+    path: '/video-auto-subtitle',
+    tag: 'AI 算力',
+    iconName: 'FileText',
+  },
 
   // PDF 工具
   {

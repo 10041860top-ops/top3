@@ -27,6 +27,10 @@ const SEO_MAP: Record<string, MetaConfig> = {
     title: '影片抽出音訊工具 - 免費提取 MP3/WAV/AAC 聲軌',
     description: '線上從 MP4 或影片中抽取背景音樂與聲音檔，匯出高品質 MP3 或 WAV 音訊。',
   },
+  '/video-auto-subtitle': {
+    title: '影片自動上字幕工具 - AI 語音轉文字 SRT/VTT 導出',
+    description: '線上 AI 語音辨識自動生成繁體中文影片字幕，支援即時預覽、字幕時間軸編輯與 SRT/VTT 檔案導出。',
+  },
   '/pdf-merge': {
     title: '線上 PDF 合併工具 - 多檔案拖曳一鍵合成單一 PDF',
     description: '線上將多個 PDF 檔案快速合併為單一文件，支援拖曳排序與預覽，100% 本地隱私安全。',

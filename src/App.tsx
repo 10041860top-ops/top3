@@ -14,6 +14,7 @@ import { VideoCutter } from './pages/video/VideoCutter';
 import { VideoCrop } from './pages/video/VideoCrop';
 import { VideoToGif } from './pages/video/VideoToGif';
 import { AudioExtractor } from './pages/video/AudioExtractor';
+import { AutoSubtitle } from './pages/video/AutoSubtitle';
 
 import { AudioCutter } from './pages/audio/AudioCutter';
 import { VoiceRecorder } from './pages/audio/VoiceRecorder';
@@ -39,6 +40,7 @@ export default function App() {
             <Route path="/video-crop" element={<VideoCrop />} />
             <Route path="/video-to-gif" element={<VideoToGif />} />
             <Route path="/audio-extractor" element={<AudioExtractor />} />
+            <Route path="/video-auto-subtitle" element={<AutoSubtitle />} />
 
             {/* PDF Tools */}
             <Route path="/pdf-merge" element={<PdfMerge />} />
