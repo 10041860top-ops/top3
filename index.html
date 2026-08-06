@@ -11,7 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" href="/src/main.tsx" src="/src/main.tsx"></script>
+    <script>
+      window.onerror = function(msg, url, lineNo, columnNo, error) {
+        var root = document.getElementById('root');
+        if (root) {
+          root.innerHTML = '<div style="padding:2rem;color:#ff6b6b;background:#1a1a2e;font-family:sans-serif;text-align:center;"><h2>⚠️ 載入錯誤 (Load Error)</h2><p>' + msg + '</p><p style="opacity:0.7;">URL: ' + url + ' (Line: ' + lineNo + ')</p></div>';
+        }
+        return false;
+      };
+    </script>
+    <div id="root">
+      <div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#0d0f17;color:#fff;font-family:sans-serif;">
+        <div style="text-align:center;">
+          <h2 style="margin-bottom:0.5rem;">123apps 繁體中文全能媒體工具箱</h2>
+          <p style="color:rgba(255,255,255,0.6);">正在加載 WebAssembly 媒體組件...</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
