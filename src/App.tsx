@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { SeoMeta } from './components/SeoMeta';
@@ -22,7 +22,7 @@ import { ImageConverter } from './pages/converter/ImageConverter';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <SeoMeta />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         {/* Header Navigation */}
@@ -60,6 +60,6 @@ export default function App() {
         {/* Footer */}
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
